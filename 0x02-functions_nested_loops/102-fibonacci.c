@@ -26,6 +26,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-
-103-fibonacci.c
