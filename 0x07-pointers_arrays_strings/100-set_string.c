@@ -1,28 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * print_diagsums - print sum of 2 digona
- * @a:int
- * @size:int size
- * Return:void
+ * set_string - set a pointer to char
+ * @s:pointer to pointer
+ * @to:pointer to char
+ * Return:void;
  */
-void print_diagsums(int *a, int size)
+void set_string(char **s, char *to)
 {
-int i, s1 = 0, s2 = 0;
-
-	for (i = 0; i < size; i++)
-	{
-		s1 += a[i];
-		a += size;
-	}
-
-	a -= size;
-
-	for (i = 0; i < size; i++)
-	{
-		s2 += a[i];
-		a -= size;
-	}
-
-	printf("%d, %d\n", s1, s2);
+	*s = to;
 }
